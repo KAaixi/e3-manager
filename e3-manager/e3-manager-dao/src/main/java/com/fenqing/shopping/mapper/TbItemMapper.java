@@ -17,6 +17,14 @@ public interface TbItemMapper {
     int insertSelective(TbItem record);
 
     List<TbItem> selectByExample(TbItemExample example);
+    
+    /**
+     * 分页查询商品列表
+     * @param start 开始位置
+     * @param size 一页多少条数据 
+     * @return 查询到的结果集合
+     */
+    List<TbItem> selectListByPage(@Param("start")int start, @Param("size") int size);
 
     TbItem selectByPrimaryKey(Long id);
 

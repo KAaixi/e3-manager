@@ -19,6 +19,18 @@
       <scope>test</scope>
     </dependency>
     
+    <!-- 依赖service接口 -->
+	<dependency>
+		<groupId>com.fenqing</groupId>
+		<artifactId>e3-manager-interface</artifactId>
+	</dependency>
+	
+	<!-- 依赖dao接口 -->
+	<dependency>
+		<groupId>com.fenqing</groupId>
+		<artifactId>e3-manager-dao</artifactId>
+	</dependency>
+    
     <!-- dubbo -->
 	<dependency>
 	    <groupId>com.alibaba</groupId>
